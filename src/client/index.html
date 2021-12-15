@@ -5,48 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nick Hibbits</title>
+    <!-- links for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Hind+Madurai:wght@300&display=swap"
+    />
   </head>
   <body>
     <section class="header">
-      <h1>Nick Hibbits</h1>
-      <div>
+      <div class="title">
+        <h1 id="main-header" class="header-title">Nick Hibbits</h1>
+        <ul class="nav-options">
+          <li class="first-nav-item">About</li>
+          <li>Projects</li>
+          <li>Connect</li>
+        </ul>
+      </div>
+      <p class="subheader">
         A subheader about me to kick things off and give a brief overivew of the
         site
-      </div>
+      </p>
     </section>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Connect</li>
-      </ul>
-    </nav>
     <main>
       <!-- have a different background color for each section -->
       <!-- make navbar links scroll to each section on the site (this will be a SPA) -->
       <section class="bio">
-        <h2>About</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet
-        justo. Tincidunt dui ut ornare lectus sit amet est placerat. Vel risus
-        commodo viverra maecenas. Nisl purus in mollis nunc sed id semper risus
-        in. Ut porttitor leo a diam sollicitudin tempor. Urna porttitor rhoncus
-        dolor purus non. Morbi tincidunt ornare massa eget egestas purus viverra
-        accumsan. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
-        curabitur. Massa tincidunt dui ut ornare. Sem viverra aliquet eget sit
-        amet. A cras semper auctor neque vitae tempus quam pellentesque nec.
-        Odio morbi quis commodo odio aenean sed adipiscing. Purus ut faucibus
-        pulvinar elementum integer enim neque volutpat ac.
+        <h2 class="header-title">About</h2>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+          dictum sit amet justo. Tincidunt dui ut ornare lectus sit amet est
+          placerat. Vel risus commodo viverra maecenas. Nisl purus in mollis
+          nunc sed id semper risus in. Ut porttitor leo a diam sollicitudin
+          tempor. Urna porttitor rhoncus dolor purus non. Morbi tincidunt ornare
+          massa eget egestas purus viverra accumsan. Nec sagittis aliquam
+          malesuada bibendum arcu vitae elementum curabitur. Massa tincidunt dui
+          ut ornare. Sem viverra aliquet eget sit amet. A cras semper auctor
+          neque vitae tempus quam pellentesque nec. Odio morbi quis commodo odio
+          aenean sed adipiscing. Purus ut faucibus pulvinar elementum integer
+          enim neque volutpat ac.
+        </p>
       </section>
       <section class="projects">
-        <h2>Projects</h2>
-        Set of cards to display projects on github and site for music when up
-        and running. Display a title with picture layered beneath by default. On
-        mouseover display the description of the project. Link each card to
-        github or soundcloud
+        <h2 class="header-title">Projects</h2>
+        <p class="section-text">
+          Set of cards to display projects on github and site for music when up
+          and running. Display a title with picture layered beneath by default.
+          On mouseover display the description of the project. Link each card to
+          github or soundcloud
+        </p>
       </section>
       <section class="connect">
-        <h2>Connect</h2>
+        <h2 class="header-title">Connect</h2>
         icons for insta, github, linkedin, email -- all clickable
       </section>
     </main>

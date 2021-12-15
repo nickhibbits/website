@@ -1,3 +1,58 @@
-* {
-  background-color: lightblue;
+$font-primary: "Archivo", sans-serif;
+$font-secondary: "Hind Madurai", sans-serif;
+
+body {
+  margin: 2rem 5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  // border: solid 1px green;
+}
+
+#main-header {
+  font-size: 3rem;
+}
+
+nav {
+  border: solid 1px blue;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.first-nav-item {
+  padding-left: 4rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.header-title {
+  font-family: $font-primary;
+  margin: 0;
+  // border: solid 1px red;
+}
+
+.subheader {
+  font-family: $font-secondary;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: solid 1px lightgrey;
+}
+
+.section-text {
+  font-family: $font-secondary;
+}
+
+ul {
+  list-style-type: none;
+  font-family: $font-secondary;
 }
