@@ -27,6 +27,12 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  :hover {
+    border-bottom: solid 2px black;
+    transition-property: border-bottom;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 }
 
 .nav-options-wrapper {
