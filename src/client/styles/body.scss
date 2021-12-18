@@ -1,13 +1,37 @@
 @use "./global.scss" as global;
 
+.main-wrapper {
+  margin-top: 3rem;
+  // border: solid 1px green;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
 .bio {
-  border: solid 1px green;
+  grid-column: 1 / span 3;
+  @include global.font-secondary;
+  // border: solid 5px green;
 }
 
-.projects {
-  border: solid 1px blue;
+.projects-wrapper {
+  display: flex;
+  align-items: center;
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  // border: solid 5px blue;
 }
 
-.section-text {
+// .projects {
+//   display: flex;
+//   align-items: center;
+// }
+
+.connect {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.projects .section-text {
   @include global.font-secondary;
 }
