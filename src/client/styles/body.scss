@@ -4,12 +4,12 @@
   margin-top: 3rem;
   // border: solid 1px green;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(2, 1fr) 10rem;
 }
 
 .bio {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 5;
   @include global.font-secondary;
   background-color: rgb(5, 5, 163);
   padding: 2rem;
@@ -20,7 +20,7 @@
 .projects-wrapper {
   display: flex;
   align-items: center;
-  grid-column: 2 / span 3;
+  grid-column: 7 / span 3;
   grid-row: 2;
   // border: solid 5px blue;
 }
@@ -44,4 +44,9 @@
   color: black;
   border-radius: 30px;
   border: solid 1px black;
+}
+
+.image-wrapper {
+  border: solid 1px black;
+  grid-column: 7 / span 3;
 }
