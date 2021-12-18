@@ -1,0 +1,13 @@
+@use "./global.scss" as global;
+
+.bio {
+  border: solid 1px green;
+}
+
+.projects {
+  border: solid 1px blue;
+}
+
+.section-text {
+  @include global.font-secondary;
+}

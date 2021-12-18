@@ -1,5 +1,4 @@
-$font-primary: "Archivo", sans-serif;
-$font-secondary: "Hind Madurai", sans-serif;
+@use "./global.scss" as global;
 
 body {
   margin: 2rem 5rem;
@@ -36,29 +35,23 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   margin-bottom: 0;
-  font-family: $font-secondary;
-  // border: solid 1px blue;
+  @include global.font-secondary;
 }
 
 .header-title {
-  font-family: $font-primary;
+  @include global.font-primary;
   font-size: 1.7rem;
   margin: 0;
-  // border: solid 1px red;
-}
-
-.subheader {
-  font-family: $font-secondary;
-  margin-top: 0.1rem;
-  padding-top: 0.4rem;
-  border-top: solid 1px lightgrey;
-}
-
-.section-text {
-  font-family: $font-secondary;
 }
 
 ul {
   list-style-type: none;
-  font-family: $font-secondary;
+  @include global.font-secondary;
+}
+
+.subheader {
+  @include global.font-secondary;
+  margin-top: 0.1rem;
+  padding-top: 0.4rem;
+  border-top: solid 1px lightgrey;
 }

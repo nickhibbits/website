@@ -1,0 +1,10 @@
+$font-primary: "Archivo", sans-serif;
+$font-secondary: "Hind Madurai", sans-serif;
+
+@mixin font-primary {
+  font-family: $font-primary;
+}
+
+@mixin font-secondary {
+  font-family: $font-secondary;
+}
