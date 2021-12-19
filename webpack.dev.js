@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
-  devtool: "source-map",
+  // devtool: "source-map",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
@@ -29,23 +29,22 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
-        use: { loader: "file-loader" },
+        dependency: { not: ["url"] },
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "imgs",
+          },
+        },
+        type: "javascript/auto",
       },
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/client/index.html",
+      template: "./src/client/template.html",
       filename: "./index.html",
-    }),
-    new CleanWebpackPlugin({
-      // Simulate the removal of files
-      dry: true,
-      // Write Logs to Console
-      verbose: true,
-      // Automatically remove all unused webpack assets on rebuild
-      cleanStaleWebpackAssets: true,
-      protectWebpackAssets: false,
     }),
   ],
 };
