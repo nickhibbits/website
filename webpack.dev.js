@@ -28,17 +28,21 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
-        dependency: { not: ["url"] },
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "imgs",
-          },
-        },
-        type: "javascript/auto",
+        test: /\.jpg/,
+        type: "asset/resource",
       },
+      // {
+      //   test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
+      //   dependency: { not: ["url"] },
+      //   use: {
+      //     loader: "file-loader",
+      //     options: {
+      //       name: "[name].[hash].[ext]",
+      //       outputPath: "imgs",
+      //     },
+      //   },
+      //   type: "javascript/auto",
+      // },
     ],
   },
   plugins: [
