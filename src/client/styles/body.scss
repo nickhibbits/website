@@ -5,7 +5,7 @@
   // border: solid 1px green;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 20rem repeat(2, 1fr) 10rem;
+  grid-template-rows: 1fr 20rem 20rem 10rem;
 }
 
 .bio {
@@ -48,43 +48,11 @@
 
 .image-wrapper {
   justify-content: flex-end;
-  grid-column: 10 / span 2;
+  grid-column: 5 / span 2;
 }
 
 .tent-headshot {
-  max-width: 32rem;
+  max-width: 60rem;
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgb(206, 205, 205);
-}
-
-.line-1 {
-  grid-column: 2 / span 4;
-  grid-row: 1;
-  width: auto;
-  height: 30%;
-  @include global.line;
-}
-
-.line-2 {
-  grid-column: 4 / span 4;
-  grid-row: 1;
-  width: auto;
-  height: 50%;
-  @include global.line;
-}
-
-.line-3 {
-  grid-column: 10 / span 4;
-  grid-row: 2;
-  width: auto;
-  height: 70%;
-  @include global.line;
-}
-
-.line-4 {
-  grid-column: 12 / span 4;
-  grid-row: 2;
-  width: auto;
-  height: 50%;
-  @include global.line;
 }
