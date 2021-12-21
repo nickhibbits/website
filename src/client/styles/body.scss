@@ -4,14 +4,14 @@
   margin-top: 3rem;
   // border: solid 1px green;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(2, 1fr) 10rem;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 20rem repeat(2, 1fr) 10rem;
 }
 
 .bio {
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 8;
   @include global.font-secondary;
-  background-color: rgb(5, 5, 163);
+  background-color: global.$primary-color;
   padding: 2rem;
   color: white;
   border-radius: 30px;
@@ -20,13 +20,13 @@
 .projects-wrapper {
   display: flex;
   align-items: center;
-  grid-column: 7 / span 3;
-  grid-row: 2;
+  grid-column: 11 / span 4;
+  grid-row: 3;
   // border: solid 5px blue;
 }
 
 .projects {
-  background-color: rgb(5, 5, 163);
+  background-color: global.$primary-color;
   padding: 2rem;
   color: white;
   border-radius: 30px;
@@ -34,7 +34,7 @@
 
 .connect {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
 }
 
 .section-text {
@@ -47,12 +47,44 @@
 }
 
 .image-wrapper {
-  // border: solid 1px black;
-  grid-column: 7 / span 3;
+  justify-content: flex-end;
+  grid-column: 10 / span 2;
 }
 
-img {
-  height: 31rem;
-  width: 24rem;
-  border-radius: 20px;
+.tent-headshot {
+  max-width: 32rem;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(206, 205, 205);
+}
+
+.line-1 {
+  grid-column: 2 / span 4;
+  grid-row: 1;
+  width: auto;
+  height: 30%;
+  @include global.line;
+}
+
+.line-2 {
+  grid-column: 4 / span 4;
+  grid-row: 1;
+  width: auto;
+  height: 50%;
+  @include global.line;
+}
+
+.line-3 {
+  grid-column: 10 / span 4;
+  grid-row: 2;
+  width: auto;
+  height: 70%;
+  @include global.line;
+}
+
+.line-4 {
+  grid-column: 12 / span 4;
+  grid-row: 2;
+  width: auto;
+  height: 50%;
+  @include global.line;
 }

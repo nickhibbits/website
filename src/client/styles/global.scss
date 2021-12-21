@@ -1,5 +1,13 @@
 $font-primary: "Archivo", sans-serif;
 $font-secondary: "Hind Madurai", sans-serif;
+$primary-color: #3a57c6;
+$line-standard: solid 5px black;
+$line-border-radius: 20px;
+
+@mixin line {
+  border-bottom: $line-standard;
+  border-radius: 5px;
+}
 
 @mixin font-primary {
   font-family: $font-primary;
