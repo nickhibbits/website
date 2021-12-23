@@ -1,7 +1,7 @@
 @use "./global.scss" as global;
 
 .main-wrapper {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   // border: solid 1px green;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -15,6 +15,7 @@
   padding: 2rem;
   color: white;
   border-radius: 30px;
+  margin-top: 6rem;
 }
 
 .projects-wrapper {
@@ -46,13 +47,18 @@
   border: solid 1px black;
 }
 
-.image-wrapper {
-  justify-content: flex-end;
-  grid-column: 5 / span 2;
+.divider {
+  border-right: solid 1px lightgray;
+  grid-column: 8;
 }
 
-.tent-headshot {
-  max-width: 60rem;
+.image-wrapper {
+  justify-content: flex-end;
+  grid-column: 10 / span 4;
+}
+
+.headshot {
+  max-width: 32rem;
   border-radius: 10px;
-  box-shadow: 10px 5px 5px rgb(206, 205, 205);
+  // box-shadow: 10px 5px 5px rgb(206, 205, 205);
 }
