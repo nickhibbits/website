@@ -1,7 +1,0 @@
-@use "./global.scss" as global;
-
-footer {
-  @include global.font-secondary;
-  background-color: lightgray;
-  margin: 0;
-}
