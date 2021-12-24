@@ -77,6 +77,12 @@
   // box-shadow: 10px 5px 5px rgb(206, 205, 205);
 }
 
-// a {
-//   display: none;
-// }
+a {
+  text-decoration: none;
+}
+
+ion-icon {
+  :hover {
+    color: green;
+  }
+}
