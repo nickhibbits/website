@@ -5,45 +5,78 @@
   // border: solid 1px green;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 1fr 15rem 15rem 5rem 10rem 18rem 15rem 10rem;
+  grid-template-rows: 1fr 8rem 15rem 5rem 10rem 18rem 6rem 25rem 6rem 10rem;
 }
 
-.bio {
-  grid-column: 1 / span 11;
-  grid-row: 3 / span 2;
+.bio-wrapper {
+  grid-column: 1 / span 16;
+  grid-row: 3 / span 4;
   @include global.font-secondary;
   background-color: global.$primary-color;
   padding: 2rem;
   color: white;
   border-radius: 30px;
+  background-image: url("../../assets/dave-hoefler-UFnHt94r91w-unsplash.jpg");
+}
+
+.forest {
+  max-width: 90rem;
+  z-index: 2;
 }
 
 .projects-wrapper {
   // display: flex;
   // align-items: center;
-  grid-column: 11 / span 6;
-  grid-row: 6;
+  grid-column: 1 / span 16;
+  grid-row: 8;
+}
+
+#projects-header-title {
+  color: black;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px lightgrey;
 }
 
 .projects {
-  background-color: global.$primary-color;
-  padding: 2rem;
-  color: white;
+  display: flex;
+  // border: solid 2px green;
+  height: 15rem;
+  grid-column: 1 / span 16;
+  grid-row: 9 / span 1;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  height: 100%;
+  width: 80%;
+  margin: 1rem;
   border-radius: 30px;
 }
 
 .connect {
   grid-column: 1 / span 3;
-  grid-row: 8;
+  grid-row: 10;
+}
+
+.header-title {
+  font-size: 5rem;
+  -webkit-text-stroke: 0.7px black;
 }
 
 .section-text {
   @include global.font-secondary;
+  // background-color: black;
+  background: rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  background-color: tan;
-  color: black;
-  border-radius: 30px;
-  border: solid 1px black;
+  color: white;
+  border-radius: 20px;
+  // border: solid 1px black;
 }
 
 .divider {
@@ -75,6 +108,10 @@
   max-width: 32rem;
   border-radius: 10px;
   // box-shadow: 10px 5px 5px rgb(206, 205, 205);
+}
+
+#connect-header-title {
+  font-size: 3rem;
 }
 
 a {

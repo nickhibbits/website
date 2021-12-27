@@ -3,6 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 **/*.jpg
+**/*.png
 node_modules
 dist/
 # User-specific files
