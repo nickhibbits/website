@@ -12,21 +12,15 @@
   grid-column: 1 / span 7;
   grid-row: 1;
   @include global.font-secondary;
-  background-color: global.$primary-color;
-  padding: 2rem;
+  // background-color: global.$primary-color;
   color: white;
   border-radius: 30px;
-  background-image: url("../../assets/dave-hoefler-UFnHt94r91w-unsplash.jpg");
-}
-
-.forest {
-  max-width: 90rem;
-  z-index: 2;
+  background: transparent;
 }
 
 .projects-wrapper {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
   grid-column: 1 / span 16;
   grid-row: 5;
 }
@@ -40,9 +34,9 @@
 .projects {
   display: flex;
   // border: solid 2px green;
-  height: 15rem;
+  height: 100%;
   grid-column: 1 / span 16;
-  // grid-row: 9 / span 1;
+  grid-row: 5 / span 2;
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
@@ -50,13 +44,34 @@
 
 .project-card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  @include global.font-secondary;
   align-items: center;
   border: solid 1px black;
-  height: 100%;
+  height: 20rem;
   width: 80%;
   margin: 1rem;
   border-radius: 30px;
+  padding: 1rem;
+}
+
+.card-content {
+  // border: solid 1px green;
+  margin-top: 0;
+  // margin: 0.5rem;
+}
+
+.card-title {
+  border-bottom: solid 1px white;
+  margin: 0% 0.5rem;
+}
+
+.card-description {
+  // padding: 2rem;
+  font-size: 0.85rem;
+  // border: solid 1px blue;
+  margin: 0.5rem;
 }
 
 .connect {
@@ -71,12 +86,10 @@
 
 .section-text {
   @include global.font-secondary;
-  // background-color: black;
-  background: rgba(0, 0, 0, 0.7);
   padding: 1rem;
+  font-size: 1.2rem;
   color: white;
   border-radius: 20px;
-  // border: solid 1px black;
 }
 
 .divider {
@@ -89,19 +102,29 @@
   justify-content: flex-end;
   grid-row: 1;
   grid-column: 10 / span 4;
+  padding-left: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  grid-row: 3;
+  grid-column: 1 / span 16;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo-wrapper {
   display: flex;
   align-items: center;
   grid-row: 3;
-  grid-column: 8 / span 2;
+  grid-column: 7 / span 2;
+  height: 100%;
 }
 
 .logo {
   font-family: global.$logo-font;
-  font-size: 10rem;
-  -webkit-text-stroke: 5px global.$primary-color;
+  font-size: 20rem;
+  -webkit-text-stroke: 10px rgb(182, 182, 182);
   color: rgb(0, 0, 0);
   // border: solid 2px green;
 }
