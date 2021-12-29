@@ -1,7 +1,6 @@
 @use "./global.scss" as global;
 
 body {
-  margin: 2rem 5rem;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -14,14 +13,26 @@ body {
 .title {
   display: grid;
   grid-template-columns: 18rem 1fr;
+  border-bottom: solid 0.5px white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main-wrapper {
+  padding-top: 60px;
 }
 
 .header {
   color: white;
+  background: rgba(2, 0, 36, 0.85);
 }
 
 #main-header {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 nav {
