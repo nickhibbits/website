@@ -1,6 +1,7 @@
 import "./client/styles/header.scss";
 import "./client/styles/body.scss";
 import "./client/styles/mediaQueries.scss";
+import "./client/styles/projects.scss";
 
 import { makeSticky, styleSocialHover } from "./client/app";
 
