@@ -5,4 +5,10 @@ import "./client/styles/projects.scss";
 
 import { makeSticky } from "./client/app";
 
+const header = document.getElementById("header");
+
+window.onscroll = function () {
+  makeSticky(header);
+};
+
 export { makeSticky };
