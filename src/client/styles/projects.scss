@@ -1,4 +1,5 @@
 @use "./global.scss" as global;
+@import "./mediaQueries.scss";
 
 .projects {
   display: flex;
@@ -7,6 +8,12 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
+  @include mobileAndTablet {
+    display: grid;
+    grid-template-rows: 20rem;
+    grid-template-columns: repeat(3, 30rem);
+    overflow-x: scroll;
+  }
 }
 
 #projects-header-title {
@@ -27,6 +34,10 @@
   margin: 1rem;
   border-radius: 30px;
   padding: 1rem;
+}
+
+.cards-wrapper {
+  overflow-x: scroll;
 }
 
 .card-content {
