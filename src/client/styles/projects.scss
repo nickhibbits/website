@@ -9,8 +9,8 @@
   justify-content: space-between;
   @include mobileAndTablet {
     display: grid;
-    grid-template-rows: 20rem;
-    grid-template-columns: repeat(3, 30rem);
+    grid-template-rows: 25rem;
+    grid-template-columns: repeat(3, 40rem);
     overflow-x: scroll;
   }
 }
@@ -40,9 +40,7 @@
 // }
 
 .card-content {
-  // border: solid 1px green;
   margin-top: 0;
-  // margin: 0.5rem;
 }
 
 .card-title {
@@ -51,9 +49,7 @@
 }
 
 .card-description {
-  // padding: 2rem;
   font-size: 0.85rem;
-  // border: solid 1px blue;
   margin: 0.5rem;
 }
 
