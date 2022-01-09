@@ -13,13 +13,13 @@ body {
   grid-template-rows: 1fr 8rem 45rem 6rem 27rem 18rem 10rem;
 }
 
-.bio-image-wrapper {
-  grid-template-columns: auto;
-  @include mobileAndTablet {
-    display: flex;
-    flex-direction: column;
-  }
-}
+// .bio-image-wrapper {
+//   grid-template-columns: auto;
+//   @include mobileAndTablet {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
 
 .bio-wrapper {
   grid-column: 1 / span 7;

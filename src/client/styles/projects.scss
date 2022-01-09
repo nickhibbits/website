@@ -7,7 +7,6 @@
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2rem;
   @include mobileAndTablet {
     display: grid;
     grid-template-rows: 20rem;
@@ -36,9 +35,9 @@
   padding: 1rem;
 }
 
-.cards-wrapper {
-  overflow-x: scroll;
-}
+// .cards-wrapper {
+//   overflow-x: scroll;
+// }
 
 .card-content {
   // border: solid 1px green;
