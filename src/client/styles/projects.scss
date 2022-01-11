@@ -1,6 +1,12 @@
 @use "./global.scss" as global;
 @import "./mediaQueries.scss";
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
 .projects {
   display: flex;
   // border: solid 2px green;
