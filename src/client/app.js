@@ -9,19 +9,24 @@ export function makeSticky(navbar) {
 }
 
 export function scrollToSection() {
-  console.log("here");
-  let sections = document.querySelectorAll("section");
-  console.log("sections", sections);
-  let sectionIds = Array.from(sections).map((section) => section.id);
-  console.log("sectionIds", sectionIds);
-
   Array.from(document.querySelector("ul").children).forEach((navItem) => {
     navItem.addEventListener("click", (e) => {
       e.preventDefault();
-      document.querySelector(navItem.getAttribute("href")).scrollIntoView({
-        block: "center",
-        behavior: "smooth",
-      });
+      console.log(navItem);
+
+      if (navItem.getAttribute("id") == "about-nav-item") {
+        // document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        document.querySelector(navItem.getAttribute("href")).scrollIntoView({
+          block: "center",
+          behavior: "smooth",
+        });
+      }
     });
   });
 }
