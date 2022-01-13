@@ -77,10 +77,9 @@ nav {
 li {
   border: none;
   position: relative;
-}
-
-li:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 li::after {

@@ -39,11 +39,12 @@ a {
   margin: 1rem;
   border-radius: 30px;
   padding: 1rem;
+  transition: border 0.3s ease-in;
+  &:hover {
+    border: solid 1px white;
+    box-shadow: white;
+  }
 }
-
-// .cards-wrapper {
-//   overflow-x: scroll;
-// }
 
 .card-content {
   margin-top: 0;
