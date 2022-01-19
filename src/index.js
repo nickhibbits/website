@@ -2,6 +2,7 @@ import "./client/styles/header.scss";
 import "./client/styles/body.scss";
 import "./client/styles/mediaQueries.scss";
 import "./client/styles/projects.scss";
+import "./client/styles/navMobile.scss";
 
 import { makeSticky, scrollToSection } from "./client/app";
 

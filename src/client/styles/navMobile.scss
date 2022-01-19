@@ -1,0 +1,13 @@
+@import "./mediaQueries.scss";
+
+.nav-options-mobile-wrapper {
+  display: none;
+  @include mobileAndTablet {
+    display: flex;
+  }
+}
+
+.nav-links-mobile {
+  text-decoration: none;
+  color: white;
+}
