@@ -20,11 +20,14 @@ export function scrollToSection(elementId) {
           navItem.getAttribute("id") == "about-nav-item" ||
           "about-nav-item-mobile"
         ) {
+          console.log("about nav item");
+          console.log("about nav item", navItem.getAttribute("id"));
           window.scrollTo({
             top: 0,
             behavior: "smooth",
           });
-        } else {
+        } else if (navItem.getAttribute("id") == null) {
+          console.log("other nav item");
           document.querySelector(navItem.getAttribute("href")).scrollIntoView({
             block: "center",
             behavior: "smooth",
@@ -42,7 +45,6 @@ export function showNavbarMobile() {
   );
 
   burger.addEventListener("click", () => {
-    console.log("here");
     navOptionsWrapper.classList.remove("nav-options-mobile-wrapper");
     navOptionsWrapper.classList.add("nav-options-mobile-wrapper-on");
   });
