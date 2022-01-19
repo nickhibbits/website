@@ -2,12 +2,38 @@
 
 .nav-options-mobile-wrapper {
   display: none;
+}
+
+.nav-options-mobile-wrapper-on {
   @include mobileAndTablet {
     display: flex;
+    justify-content: flex-end;
+    padding: 1rem 3rem;
   }
 }
 
-.nav-links-mobile {
+.nav-link-mobile {
+  display: flex;
   text-decoration: none;
   color: white;
+  // border-bottom: solid 1px white;
+  height: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  width: 8rem;
+}
+
+.nav-link-mobile li::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 200%;
+  bottom: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.nav-link-mobile li:hover::after {
+  width: 100%;
+  left: 0;
 }

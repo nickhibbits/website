@@ -8,25 +8,42 @@ export function makeSticky(navbar) {
   }
 }
 
-export function scrollToSection() {
-  Array.from(document.querySelector("ul").children).forEach((navItem) => {
-    navItem.addEventListener("click", (e) => {
-      e.preventDefault();
-      console.log(navItem);
+export function scrollToSection(elementId) {
+  console.log("elementId", elementId);
+  Array.from(document.querySelector(`#${elementId}`).children).forEach(
+    (navItem) => {
+      navItem.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(navItem);
 
-      if (navItem.getAttribute("id") == "about-nav-item") {
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      } else {
-        document.querySelector(navItem.getAttribute("href")).scrollIntoView({
-          block: "center",
-          behavior: "smooth",
-        });
-      }
-    });
+        if (
+          navItem.getAttribute("id") == "about-nav-item" ||
+          "about-nav-item-mobile"
+        ) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          document.querySelector(navItem.getAttribute("href")).scrollIntoView({
+            block: "center",
+            behavior: "smooth",
+          });
+        }
+      });
+    }
+  );
+}
+
+export function showNavbarMobile() {
+  const burger = document.getElementById("burger");
+  const navOptionsWrapper = document.getElementById(
+    "nav-options-mobile-wrapper"
+  );
+
+  burger.addEventListener("click", () => {
+    console.log("here");
+    navOptionsWrapper.classList.remove("nav-options-mobile-wrapper");
+    navOptionsWrapper.classList.add("nav-options-mobile-wrapper-on");
   });
 }
