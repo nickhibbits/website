@@ -45,7 +45,12 @@ export function showNavbarMobile() {
   );
 
   burger.addEventListener("click", () => {
-    navOptionsWrapper.classList.remove("nav-options-mobile-wrapper");
-    navOptionsWrapper.classList.add("nav-options-mobile-wrapper-on");
+    if (navOptionsWrapper.classList.contains("nav-options-mobile-wrapper-on")) {
+      navOptionsWrapper.classList.remove("nav-options-mobile-wrapper-on");
+      navOptionsWrapper.classList.add("nav-options-mobile-wrapper");
+    } else {
+      navOptionsWrapper.classList.remove("nav-options-mobile-wrapper");
+      navOptionsWrapper.classList.add("nav-options-mobile-wrapper-on");
+    }
   });
 }
