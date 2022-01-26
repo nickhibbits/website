@@ -17,6 +17,7 @@ body {
   grid-template-columns: 18rem 1fr;
   border-bottom: solid 0.5px white;
   width: 100%;
+  background: global.$primary-dark-color;
   // border: solid 1px yellow;
 }
 
@@ -32,8 +33,11 @@ body {
 
 .header {
   color: white;
-  background: rgba(2, 0, 36, 0.85);
-  // border: solid 2px green;
+}
+
+.header-mobile {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 #main-header {

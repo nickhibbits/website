@@ -3,6 +3,7 @@ $font-secondary: "Hind Madurai", sans-serif;
 $logo-font: "Bangers", cursive;
 $line-standard: solid 5px black;
 $line-border-radius: 20px;
+$primary-dark-color: rgba(2, 0, 36, 0.85);
 
 @mixin line {
   border-bottom: $line-standard;

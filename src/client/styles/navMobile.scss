@@ -1,19 +1,37 @@
 @import "./mediaQueries.scss";
+@use "./global.scss" as global;
 
-.nav-options-mobile-wrapper {
+.nav-options-mobile-container {
   display: none;
 }
 
-.nav-options-mobile-wrapper-on {
+.grid-filler {
+  grid-column: 1;
+  // background-color: rgba(2, 0, 36, 1) 0%;
+}
+
+.nav-options-mobile-container-on {
+  display: none;
   @include mobileAndTablet {
-    visibility: visible;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 3rem;
-    transition: visibility 0.25s ease;
+    display: grid;
+    grid-template-columns: 60% 40%;
   }
 }
 
+.nav-options-mobile-wrapper {
+  @include mobileAndTablet {
+    border: solid 1px white;
+    background: global.$primary-dark-color;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+}
+
+.nav-options-mobile {
+  padding-left: 5rem;
+}
 .nav-link-mobile {
   display: flex;
   text-decoration: none;

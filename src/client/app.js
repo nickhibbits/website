@@ -34,18 +34,32 @@ export function scrollToSection(elementId) {
 }
 
 export function showNavbarMobile() {
-  const burger = document.getElementById("burger");
-  const navOptionsWrapper = document.getElementById(
-    "nav-options-mobile-wrapper"
+  const burger = document.querySelector("#burger");
+  const navOptionsMobileContainer = document.querySelector(
+    "#nav-options-mobile-container"
   );
+  const headerMobile = document.querySelector("#header");
 
   burger.addEventListener("click", () => {
-    if (navOptionsWrapper.classList.contains("nav-options-mobile-wrapper-on")) {
-      navOptionsWrapper.classList.remove("nav-options-mobile-wrapper-on");
-      navOptionsWrapper.classList.add("nav-options-mobile-wrapper");
+    console.log("click");
+    if (
+      navOptionsMobileContainer.classList.contains(
+        "nav-options-mobile-container-on"
+      )
+    ) {
+      navOptionsMobileContainer.classList.remove(
+        "nav-options-mobile-container-on"
+      );
+      navOptionsMobileContainer.classList.add("nav-options-mobile-container");
+      headerMobile.classList.add("header-mobile");
     } else {
-      navOptionsWrapper.classList.remove("nav-options-mobile-wrapper");
-      navOptionsWrapper.classList.add("nav-options-mobile-wrapper-on");
+      navOptionsMobileContainer.classList.add(
+        "nav-options-mobile-container-on"
+      );
+      navOptionsMobileContainer.classList.remove(
+        "nav-options-mobile-container"
+      );
+      headerMobile.classList.remove("header-mobile");
     }
   });
 }

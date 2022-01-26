@@ -8,7 +8,7 @@ import { makeSticky, scrollToSection, showNavbarMobile } from "./client/app";
 
 const header = document.getElementById("header");
 
-window.onscroll = function () {
+window.onload = function () {
   makeSticky(header);
 };
 
