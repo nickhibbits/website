@@ -16,17 +16,12 @@ export function scrollToSection(elementId) {
         e.preventDefault();
         console.log(navItem);
 
-        if (
-          navItem.getAttribute("id") == "about-nav-item" ||
-          "about-nav-item-mobile"
-        ) {
-          console.log("about nav item");
-          console.log("about nav item", navItem.getAttribute("id"));
+        if (navItem.getAttribute("href") == "#section1") {
           window.scrollTo({
             top: 0,
             behavior: "smooth",
           });
-        } else if (navItem.getAttribute("id") == null) {
+        } else {
           console.log("other nav item");
           document.querySelector(navItem.getAttribute("href")).scrollIntoView({
             block: "center",

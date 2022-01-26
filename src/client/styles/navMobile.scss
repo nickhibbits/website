@@ -6,9 +6,11 @@
 
 .nav-options-mobile-wrapper-on {
   @include mobileAndTablet {
+    visibility: visible;
     display: flex;
     justify-content: flex-end;
     padding: 1rem 3rem;
+    transition: visibility 0.25s ease;
   }
 }
 
