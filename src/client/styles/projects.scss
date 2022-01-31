@@ -13,10 +13,16 @@ a {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  @include mobileAndTablet {
+  @include tablet {
     display: grid;
     grid-template-rows: 25rem;
     grid-template-columns: repeat(3, 40rem);
+    overflow-x: scroll;
+  }
+  @include mobile {
+    display: grid;
+    grid-template-rows: 25rem;
+    grid-template-columns: repeat(3, 25rem);
     overflow-x: scroll;
   }
 }

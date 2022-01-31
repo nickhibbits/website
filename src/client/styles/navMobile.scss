@@ -12,14 +12,26 @@
 
 .nav-options-mobile-container-on {
   display: none;
-  @include mobileAndTablet {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  @include mobile {
     display: grid;
     grid-template-columns: 60% 40%;
   }
 }
 
 .nav-options-mobile-wrapper {
-  @include mobileAndTablet {
+  @include tablet {
+    border: solid 1px white;
+    background: global.$primary-dark-color;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+  @include mobile {
     border: solid 1px white;
     background: global.$primary-dark-color;
     grid-column: 2;

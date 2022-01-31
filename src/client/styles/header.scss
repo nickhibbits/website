@@ -56,14 +56,22 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  @include mobileAndTablet {
+  @include tablet {
+    justify-content: flex-end;
+  }
+  @include mobile {
     justify-content: flex-end;
   }
 }
 
 #burger {
   display: none;
-  @include mobileAndTablet {
+  @include tablet {
+    display: flex;
+    padding-right: 4rem;
+    font-size: 35px;
+  }
+  @include mobile {
     display: flex;
     padding-right: 4rem;
     font-size: 35px;
@@ -73,7 +81,10 @@ nav {
 .nav-link {
   text-decoration: none;
   color: inherit;
-  @include mobileAndTablet {
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
     display: none;
   }
 }
