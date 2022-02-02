@@ -17,8 +17,8 @@ export function scrollToSection(elementId) {
         console.log(navItem);
 
         if (navItem.getAttribute("href") == "#section1") {
-          window.scrollTo({
-            top: 0,
+          document.querySelector(navItem.getAttribute("href")).scrollIntoView({
+            block: "center",
             behavior: "smooth",
           });
         } else {

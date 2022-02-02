@@ -3,6 +3,7 @@ import "./client/styles/body.scss";
 import "./client/styles/mediaQueries.scss";
 import "./client/styles/projects.scss";
 import "./client/styles/navMobile.scss";
+import "./client/styles/bio.scss";
 
 import { makeSticky, scrollToSection, showNavbarMobile } from "./client/app";
 
