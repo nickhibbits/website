@@ -1,23 +1,19 @@
 @use "./global.scss" as global;
 @import "./mediaQueries.scss";
 
-body {
-  margin: 0;
-}
-
 .main-wrapper {
   margin: 3.5rem 5rem;
   // border: solid 1px green;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 1fr 1rem 65rem 30rem 27rem 18rem 10rem;
+  grid-template-rows: 35rem 1rem 52rem 30rem 27rem 18rem 10rem;
   @include tablet {
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1rem 65rem 30rem 30rem 10rem 10rem;
+    grid-template-rows: 35rem 1rem 52rem 30rem 30rem 10rem 10rem;
   }
   @include mobile {
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1rem 65rem 30rem 30rem 10rem 10rem;
+    grid-template-rows: 35rem 1rem 52rem 30rem 30rem 10rem 10rem;
   }
 }
 
@@ -73,7 +69,7 @@ body {
 .logo-wrapper {
   display: flex;
   align-items: center;
-  height: 65%;
+  height: 100%;
 }
 
 .logo {

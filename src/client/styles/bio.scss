@@ -9,7 +9,7 @@
   color: white;
   border-radius: 30px;
   background: transparent;
-  margin-top: 10rem;
+  margin-top: 14.5rem;
   @include tablet {
     grid-column: 1;
     display: block;
@@ -39,7 +39,8 @@
   border-right: solid 1px lightgray;
   grid-row: 3;
   grid-column: 8;
-  margin-top: 10rem;
+  margin-top: 14.5rem;
+  height: 41rem;
   @include tablet {
     display: none;
   }
@@ -53,7 +54,7 @@
   grid-row: 3;
   grid-column: 10 / span 4;
   padding-left: 2rem;
-  margin-top: 10rem;
+  margin-top: 14.5rem;
   @include tablet {
     display: none;
     width: 100%;
