@@ -12,6 +12,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Hind+Madurai:wght@300&display=swap" />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -58,11 +59,12 @@
       <h2 class="bio-header-title" class="header-title">About</h2>
       <img id="mobile-headshot" src="../assets/nick-cool.png" alt="headshot" />
       <p class="section-text">
-        Hi, I'm Nick. Welcome to my website.<br><br>This space serves as my 
-        personal playground to experiment with new concepts I encounter in my 
-        time spent as a Web-Developer. I also use it to showcase other programming projects I'm working on.
+        Hi, I'm Nick. Welcome to my website.<br><br> This space serves as my 
+        personal playground to practice and experiment with new concepts I encounter in my 
+        time spent as a Web-Developer. This page is built from the ground up, with no help from a
+        website builder, using HTML, CSS and Javascript.<br><br>I also use the site to showcase other programming projects I've worked on.
         These include professional projects, where I was part of a larger team, and 
-        personal projects I started and finished myself.<br><br>Additionally this site is also linked to
+        personal projects I started and finished myself.<br><br>Lastly this site is also linked to
         to my music-production endeavors, under the moniker NHIBIT. Currently this is limited 
         to my Soundcloud profile, but a dedicated NHIBIT website is in the works alongside more original tracks and mixes.<br><br>
         In sync with any new programming projects or music releases, I'll be adding updates to the <em>Recent</em> section of the site.<br><br>
@@ -90,6 +92,9 @@
         <div class="projects">
           <a href="https://studiozoomies.com" class="project-card" id="zoomies-card">
             <div class="card-content">
+              <div class="zoomies-logo-wrapper">
+                <img class="zoomies-logo" src="../assets/StudioZoomiesLogoEmail.png" alt="Studio Zoomies Logo">
+              </div>
               <h3 class="card-title">Studio Zoomies</h3>
               <p class="card-description">
                 Studio Zoomies is a Customer Relationship Management application aimed at photographers. I currently work as a Junior Software Developer on the StudioZoomies Team. Utilizing the JS framework Sveltkit for building the app itself, Firebase for managing app data,
@@ -100,24 +105,25 @@
           </a>
           <a href="https://github.com/nickhibbits/travel-app" class="project-card">
             <div class="card-content">
-              <h3 class="card-title">Travel-App</h3>
+              <div class="travel-app-text-wrapper">
+                <p class="travel-app-text">Travel App ✈️</p>
+              </div>
+              <h3 class="card-title" id="travel-app-card-title">Travel-App</h3>
               <p class="card-description">
                This mock travel app was the capstone to my Udacity Front End Web-Developer Nanodegree. It combines all the basic elements required to build a modern web-application. These incude: site construction and styling with html and scss, DOM manipulation using Javascript,
                 calling different APIs and manipulating the returned data, and utilizing build-tools (in this case Webpack) for easier app managment between production and development environments.
               </p>
             </div>
           </a>
-          <div class="project-card">
+          <a href="https://soundcloud.com/nhibit" class="project-card">
             <div class="card-content">
               <h3 class="card-title">NHIBIT</h3>
               <p class="card-description">
-                Fringilla est ullamcorper eget nulla. In metus vulputate eu
-                scelerisque. Quis risus sed. Nisi est sit amet facilisis magna
-                etiam tempor. Fringilla est ullamcorper eget nulla. In metus
-                vulputate eu scelerisque. Arcu non odio. Arcu non odio.
+                NHIBIT is the name I produce music under. The sound is a blend between laid-back, melodically driven beats, and wonky club heaters you can move your feet to. 
+                Click this card to checkout some original tunes and mixes on Soundcloud.
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>

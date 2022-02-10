@@ -58,7 +58,11 @@ a {
 
 .card-title {
   border-bottom: solid 1px white;
-  margin: 0% 0.5rem;
+  margin: 2rem 0.5rem 0rem 0.5rem;
+}
+
+#travel-app-card-title {
+  margin-top: 0%;
 }
 
 .card-description {
@@ -66,6 +70,20 @@ a {
   margin: 0.5rem;
 }
 
-// #zoomies-card {
-//   background-image: url("../../assets/StudioZoomiesLogoEmail.png");
-// }
+.zoomies-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.travel-app-text-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.travel-app-text {
+  font-family: "Oi", cursive;
+  color: black;
+  font-size: 2.2rem;
+  margin: 2rem 0;
+}
