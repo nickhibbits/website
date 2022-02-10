@@ -56,6 +56,7 @@ export function showNavbarMobile() {
       navOptionsMobileContainer.classList.add(
         "nav-options-mobile-container-on"
       );
+      //add event listener here, to window(?) or to antoher element so that clicking outside the mobile nav menu closes the mobile nav menu
       navOptionsMobileContainer.classList.remove(
         "nav-options-mobile-container"
       );
