@@ -1,27 +1,6 @@
 @use "./global.scss" as global;
 @import "./mediaQueries.scss";
 
-.bio-wrapper {
-  grid-column: 1 / span 7;
-  grid-row: 3;
-  @include global.font-secondary;
-  // background-color: global.$primary-color;
-  color: white;
-  border-radius: 30px;
-  background: transparent;
-  margin-top: 14.5rem;
-  @include tablet {
-    grid-column: 1;
-    display: block;
-    flex-direction: column;
-  }
-  @include mobile {
-    grid-column: 1;
-    display: block;
-    flex-direction: column;
-  }
-}
-
 .bio-header-title {
   @include global.font-primary;
   margin: 0;
