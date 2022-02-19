@@ -22,7 +22,7 @@ a {
   @include mobile {
     display: grid;
     grid-template-rows: 25rem;
-    grid-template-columns: repeat(3, 25rem);
+    grid-template-columns: repeat(3, 32rem);
     overflow-x: scroll;
   }
 }
