@@ -26,10 +26,6 @@ module.exports = merge(common, {
         test: /\.html$/i,
         loader: "html-loader",
       },
-      {
-        test: /\.(png|jpg)/,
-        type: "asset/resource",
-      },
     ],
   },
   plugins: [
