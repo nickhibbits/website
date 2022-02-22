@@ -34,6 +34,9 @@
   grid-column: 10 / span 4;
   padding-left: 2rem;
   margin-top: 14.5rem;
+  @include bigScreen {
+    grid-column: 11 / span 4;
+  }
   @include tablet {
     display: none;
     width: 100%;
@@ -47,6 +50,9 @@
 .headshot {
   max-width: 32rem;
   border-radius: 10px;
+  @include bigScreen {
+    max-width: 34.5rem;
+  }
   // box-shadow: 10px 5px 5px rgb(206, 205, 205);
 }
 
