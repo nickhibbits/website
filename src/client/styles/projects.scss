@@ -13,6 +13,8 @@ a {
   height: 100%;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1402px) {
+  }
   @include tablet {
     display: grid;
     grid-template-rows: 25rem;

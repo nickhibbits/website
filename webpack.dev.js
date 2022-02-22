@@ -1,12 +1,11 @@
 const path = require("path");
-const webpack = require("webpack");
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-module.exports = {
-  entry: "./src/index.js",
+module.exports = merge(common, {
   mode: "development",
-  // devtool: "source-map",
+  devtool: "inline-source-map",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
@@ -39,4 +38,4 @@ module.exports = {
       filename: "./index.html",
     }),
   ],
-};
+});
