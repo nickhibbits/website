@@ -30,6 +30,9 @@ body {
 
 .sticky + .main-wrapper {
   padding-top: 60px;
+  @include mobile {
+    padding-top: 0;
+  }
 }
 
 .header {
@@ -70,12 +73,12 @@ nav {
   @include tablet {
     display: flex;
     padding-right: 4rem;
-    font-size: 35px;
+    font-size: 50px;
   }
   @include mobile {
     display: flex;
     padding-right: 4rem;
-    font-size: 35px;
+    font-size: 50px;
   }
 }
 

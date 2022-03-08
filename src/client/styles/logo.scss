@@ -1,4 +1,5 @@
 @use "./global.scss" as global;
+@import "./mediaQueries.scss";
 
 .logo-wrapper {
   display: flex;
@@ -6,7 +7,7 @@
   height: 100%;
 }
 
-.logo {
+.main-logo {
   font-family: global.$logo-font;
   font-size: 20rem;
   -webkit-text-stroke: 10px rgb(182, 182, 182);
@@ -16,6 +17,12 @@
   -o-animation: fadein ease 3s; /* Opera < 12.1 */
   animation: fadein ease 3s;
   color: rgb(0, 0, 0);
+  width: 800px;
+  height: 800px;
+  @include mobile {
+    width: 525px;
+    height: 525px;
+  }
   // border: solid 2px green;
 }
 

@@ -1,5 +1,5 @@
 @mixin tablet {
-  @media (max-width: 1000px) and (min-width: 701px) {
+  @media (max-width: 999px) and (min-width: 701px) {
     @content;
   }
 }
@@ -11,7 +11,7 @@
 }
 
 @mixin bigScreen {
-  @media (min-width: 1700px) {
+  @media (max-width: 1700px) and (min-width: 1000px) {
     @content;
   }
 }
