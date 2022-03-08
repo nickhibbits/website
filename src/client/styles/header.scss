@@ -61,10 +61,10 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   @include tablet {
-    justify-content: flex-end;
+    display: none;
   }
   @include mobile {
-    justify-content: flex-end;
+    display: none;
   }
 }
 
@@ -72,12 +72,12 @@ nav {
   display: none;
   @include tablet {
     display: flex;
-    padding-right: 4rem;
+    // padding-right: 4rem;
     font-size: 50px;
   }
   @include mobile {
     display: flex;
-    padding-right: 4rem;
+    // padding-right: 4rem;
     font-size: 50px;
   }
 }
