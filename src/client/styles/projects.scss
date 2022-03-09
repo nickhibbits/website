@@ -15,8 +15,8 @@ a {
   justify-content: space-between;
   @include bigScreen {
     display: grid;
-    grid-template-rows: 25rem 25rem;
-    grid-template-columns: repeat(2, 40rem);
+    grid-template-rows: 25rem;
+    grid-template-columns: repeat(3, 28rem);
   }
   @include tablet {
     display: grid;

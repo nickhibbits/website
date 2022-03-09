@@ -35,7 +35,7 @@
   padding-left: 2rem;
   margin-top: 14.5rem;
   @include bigScreen {
-    grid-column: 11 / span 4;
+    grid-column: 10 / span 4;
   }
   @include tablet {
     display: none;
