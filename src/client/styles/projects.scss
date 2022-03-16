@@ -13,10 +13,6 @@ a {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  @include bigScreen {
-    display: grid;
-    grid-template-columns: repeat(3, 28rem);
-  }
   @include tablet {
     display: grid;
     grid-template-rows: 28rem;
@@ -79,6 +75,10 @@ a {
 .zoomies-logo-wrapper {
   display: flex;
   flex-direction: row;
+  padding-bottom: 1.7rem;
+  @include mobile {
+    padding-bottom: 0;
+  }
 }
 
 .travel-app-text-wrapper {
@@ -95,7 +95,7 @@ a {
   margin: 2rem 0;
   @include mobile {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 0.4rem 0;
   }
 }
 
