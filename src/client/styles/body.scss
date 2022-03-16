@@ -8,15 +8,15 @@
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: 40rem 1rem 52rem 20rem 27rem 18rem 10rem;
   @media (max-width: 1402px) {
-    grid-template-rows: 40rem 1rem 52rem 20rem 55rem 10rem 10rem;
+    grid-template-rows: 40rem 1rem 52rem 20rem 40rem 10rem;
   }
   @include tablet {
     grid-template-columns: 100%;
-    grid-template-rows: 40rem 1rem 52rem 20rem 30rem 10rem 10rem;
+    grid-template-rows: 40rem 1rem 52rem 20rem 30rem 10rem;
   }
   @include mobile {
     grid-template-columns: 100%;
-    grid-template-rows: 40rem 1rem 80rem 20rem 30rem 10rem 10rem;
+    grid-template-rows: 32rem 1rem 72rem 5rem 35rem 10rem;
     margin: 3.5rem 1rem;
   }
 }
@@ -39,6 +39,7 @@
     grid-column: 1;
     display: block;
     flex-direction: column;
+    margin-top: 8rem;
   }
 }
 
@@ -74,6 +75,7 @@
   @include mobile {
     padding: 0;
     margin: 1.2rem 0;
+    font-size: 1rem;
   }
 }
 

@@ -20,8 +20,11 @@
   width: 800px;
   height: 800px;
   @include mobile {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
+  }
+  @include bigScreen {
+    padding-top: 20rem;
   }
   // border: solid 2px green;
 }
