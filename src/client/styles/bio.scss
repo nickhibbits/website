@@ -26,6 +26,9 @@
   @include mobile {
     display: none;
   }
+  @include desktop {
+    height: 35rem;
+  }
 }
 
 .image-wrapper {
@@ -50,6 +53,10 @@
 .headshot {
   max-width: 32rem;
   border-radius: 10px;
+
+  @include desktop {
+    max-width: 26rem;
+  }
   @include bigScreen {
     max-width: 34.5rem;
   }
