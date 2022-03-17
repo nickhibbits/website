@@ -12,18 +12,25 @@ a {
   // border: solid 2px green;
   height: 100%;
   align-items: center;
-  justify-content: space-between;
-  @include tablet {
-    display: grid;
-    grid-template-rows: 28rem;
-    grid-template-columns: repeat(3, 40rem);
-    overflow-x: scroll;
-  }
+  justify-content: space-evenly;
   @include mobile {
     display: grid;
     grid-template-rows: 28rem;
     grid-template-columns: repeat(3, 20rem);
     overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  @include tablet {
+    display: grid;
+    grid-template-rows: 28rem;
+    grid-template-columns: repeat(3, 40rem);
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-rows: 28rem;
+    grid-template-columns: repeat(2, 30rem);
   }
 }
 
@@ -50,6 +57,15 @@ a {
   &:hover {
     border: solid 1px white;
     box-shadow: white;
+  }
+  @include mobile {
+    width: auto;
+  }
+  @include tablet {
+    width: auto;
+  }
+  @include desktop {
+    width: auto;
   }
 }
 

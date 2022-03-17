@@ -23,6 +23,10 @@
     width: 350px;
     height: 350px;
   }
+
+  @include desktop {
+    padding: 8rem;
+  }
   @include bigScreen {
     padding-top: 10rem;
   }
