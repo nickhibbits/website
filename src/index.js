@@ -6,6 +6,9 @@ import "./client/styles/navMobile.scss";
 import "./client/styles/bio.scss";
 import "./client/styles/logo.scss";
 
+import "./static/nick-cool.png";
+import "./static/nickFavicon.png";
+
 import { makeSticky, scrollToSection, showNavbarMobile } from "./client/app";
 
 const header = document.getElementById("header");
