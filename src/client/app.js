@@ -64,3 +64,5 @@ export function showNavbarMobile() {
     }
   });
 }
+
+console.log("test", test);
