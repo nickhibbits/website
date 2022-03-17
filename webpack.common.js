@@ -11,14 +11,14 @@ module.exports = {
       filename: "./index.html",
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpg)/,
-        type: "asset/resource",
-      },
-    ],
-  },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.(png|jpg)/,
+  //       type: "asset/resource",
+  //     },
+  //   ],
+  // },
   output: {
     filename: "nick-hibbits-website.bundle.js",
     path: path.resolve(__dirname, "dist"),
