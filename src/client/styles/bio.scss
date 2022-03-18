@@ -53,7 +53,7 @@
 .headshot {
   max-width: 32rem;
   border-radius: 10px;
-
+  background-image: url("../../assets/nick-cool.png");
   @include desktop {
     max-width: 26rem;
   }
@@ -65,6 +65,7 @@
 
 #mobile-headshot {
   display: none;
+  background-image: url("../../assets/nick-cool.png");
   @include tablet {
     display: block;
     float: right;
