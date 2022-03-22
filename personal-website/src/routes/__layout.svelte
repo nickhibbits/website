@@ -3,8 +3,8 @@
 </script>
 
 <main class="root-layout">
-	<!-- TODO add mobile NavBar -->
 	<Navbar />
+	<slot />
 </main>
 
 <style lang="scss">

@@ -1,7 +1,10 @@
 <script lang="ts">
+	import Logo from '$lib/logo/Logo.svelte';
 </script>
 
-<main class="root-index" />
+<main class="root-index">
+	<Logo />
+</main>
 
 <style lang="scss">
 	.root-index {
