@@ -1,10 +1,14 @@
 <script lang="ts">
+	import Navbar from '$lib/navbar/Navbar.svelte';
 </script>
 
-<main class="root-index" />
+<main class="root-layout">
+	<!-- TODO add mobile NavBar -->
+	<Navbar />
+</main>
 
 <style lang="scss">
-	.root-index {
+	.root-layout {
 		background: rgb(2, 0, 36);
 		background: linear-gradient(
 			180deg,
@@ -14,5 +18,7 @@
 		);
 		scroll-behavior: smooth;
 		margin: 0;
+		height: 100%;
+		width: 100%;
 	}
 </style>
