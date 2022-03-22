@@ -8,7 +8,11 @@ import "./client/styles/logo.scss";
 
 import { makeSticky, scrollToSection, showNavbarMobile } from "./client/app";
 
-const header = document.getElementById("header");
+import "./assets/nick-cool.png";
+import "./assets/nickFavicon.png";
+
+const mainHeadshot = document.querySelector("#main-headshot"); // set src attribute from here?
+const mobilHeadshot = document.querySelector("#mobile-headshot");
 
 window.onload = function () {
   makeSticky(header);

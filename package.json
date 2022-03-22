@@ -22,6 +22,7 @@
   "homepage": "https://github.com/nickhibbits/website#readme",
   "dependencies": {
     "concurrently": "^6.4.0",
+    "copy-webpack-plugin": "^10.2.4",
     "express": "^4.17.1"
   },
   "devDependencies": {
