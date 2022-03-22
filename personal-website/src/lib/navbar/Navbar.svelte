@@ -11,10 +11,10 @@
 					<a href="#section1" id="about-nav-item" class="nav-link">
 						<li>About</li>
 					</a>
-					<a href="#section2" class="nav-link">
+					<a href="/projects" class="nav-link">
 						<li>Projects</li>
 					</a>
-					<a href="#section3" class="nav-link">
+					<a href="/connect" class="nav-link">
 						<li>Connect</li>
 					</a>
 				</ul>
