@@ -1,41 +1,35 @@
 <script lang="ts">
+	import Bio from '$lib/bio/Bio.svelte';
+
 	let src = './static/nick-cool.png';
 	console.log('src', src);
 </script>
 
-<main class="about-wrapper">
-	<!-- <div class="bio-image-wrapper"> -->
+<main class="about-index">
+	<div class="bio-wrapper">
+		<Bio />
+	</div>
+	<div class="divider" />
 	<div class="image-wrapper">
 		<img class="headshot" id="main-headshot" {src} alt="nick-cool" />
 	</div>
-	<div class="divider" />
-	<!-- </div> -->
-	<section class="bio-wrapper" id="section1">
-		<h2 class="bio-header-title">About</h2>
-		<div class="mobile-headshot-wrapper">
-			<img id="mobile-headshot" alt="headshot" />
-		</div>
-		<p class="section-text">
-			Hi, I'm Nick. Welcome to my website.<br /><br /> This space serves as my personal playground
-			to practice and experiment with new concepts I encounter in my time spent as a Web-Developer.
-			This page is built from the ground up, with no help from a website builder, using HTML, CSS
-			and Javascript.<br /><br />I also use the site to showcase other programming projects I've
-			worked on. These include professional projects, where I was part of a larger team, and
-			personal projects I started and finished myself.<br /><br />Lastly this site is also linked to
-			to my music-production endeavors, under the moniker NHIBIT. Currently this is limited to my
-			Soundcloud profile, but a dedicated NHIBIT website is in the works alongside more original
-			tracks and mixes.<br /><br />
-			In sync with any new programming projects or music releases, I'll be adding updates to the
-			<em>Recent</em>
-			section of the site.<br /><br />
-			Thanks for visiting!
-		</p>
-	</section>
 </main>
 
 <style lang="scss">
 	@use '../../scss/global.scss' as global;
 	@import '../../scss/mediaQueries.scss';
+
+	.about-index {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 100%;
+		margin: 3rem;
+		margin-bottom: 0%;
+	}
+
+	.bio-wrapper {
+		grid-column: 1 / span 5;
+	}
 
 	.bio-header-title {
 		@include global.font-primary;
@@ -52,10 +46,8 @@
 
 	.divider {
 		border-right: solid 1px lightgray;
-		grid-row: 3;
-		grid-column: 8;
-		margin-top: 14.5rem;
-		height: 41rem;
+		grid-column: 6;
+		height: 35rem;
 		@include tablet {
 			display: none;
 		}
@@ -69,10 +61,8 @@
 
 	.image-wrapper {
 		justify-content: flex-end;
-		grid-row: 3;
-		grid-column: 10 / span 4;
+		grid-column: 8 / span 5;
 		padding-left: 2rem;
-		margin-top: 14.5rem;
 		@include bigScreen {
 			grid-column: 10 / span 4;
 		}
@@ -87,8 +77,9 @@
 	}
 
 	.headshot {
-		max-width: 32rem;
+		max-width: 28rem;
 		border-radius: 10px;
+		margin-bottom: 3rem;
 		@include desktop {
 			max-width: 26rem;
 		}
