@@ -111,12 +111,12 @@
 			height: 350px;
 		}
 
-		@include desktop {
-			padding: 8rem;
-		}
-		@include bigScreen {
-			padding-top: 10rem;
-		}
+		// @include desktop {
+		// 	padding: 8rem;
+		// }
+		// @include bigScreen {
+		// 	padding-top: 10rem;
+		// }
 		// border: solid 2px green;
 	}
 

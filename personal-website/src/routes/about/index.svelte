@@ -25,10 +25,26 @@
 		grid-template-rows: 100%;
 		margin: 3rem;
 		margin-bottom: 0%;
+		@include mobile {
+			display: flex;
+		}
+		@include tablet {
+			display: flex;
+		}
 	}
 
 	.bio-wrapper {
 		grid-column: 1 / span 5;
+		@include mobile {
+			display: flex;
+			flex-direction: row;
+		}
+		@include tablet {
+			display: flex;
+		}
+		@include bigScreen {
+			display: flex;
+		}
 	}
 
 	.bio-header-title {
@@ -64,7 +80,7 @@
 		grid-column: 8 / span 5;
 		padding-left: 2rem;
 		@include bigScreen {
-			grid-column: 10 / span 4;
+			grid-column: 8 / span 5;
 		}
 		@include tablet {
 			display: none;
@@ -87,23 +103,5 @@
 			max-width: 34.5rem;
 		}
 		// box-shadow: 10px 5px 5px rgb(206, 205, 205);
-	}
-
-	#mobile-headshot {
-		display: none;
-		@include tablet {
-			display: block;
-			float: right;
-			margin: 1.5rem;
-			max-width: 18rem;
-			border-radius: 10px;
-		}
-		@include mobile {
-			display: block;
-			float: right;
-			margin: 1rem;
-			max-width: 12rem;
-			border-radius: 10px;
-		}
 	}
 </style>

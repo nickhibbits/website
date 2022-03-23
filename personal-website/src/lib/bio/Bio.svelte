@@ -4,6 +4,7 @@
 
 <main class="bio-component">
 	<h2 class="bio-header-title">About</h2>
+	<img id="mobile-headshot" {src} alt="headshot" />
 	<p class="section-text">
 		Hi, I'm Nick. Welcome to my website.<br /><br /> This space serves as my personal playground to
 		practice and experiment with new concepts I encounter in my time spent as a Web-Developer. This
@@ -19,9 +20,6 @@
 		section of the site.<br /><br />
 		Thanks for visiting!
 	</p>
-	<div class="mobile-headshot-wrapper">
-		<img id="mobile-headshot" {src} alt="headshot" />
-	</div>
 </main>
 
 <style lang="scss">
@@ -40,12 +38,13 @@
 			grid-column: 1;
 			display: block;
 			flex-direction: column;
+			margin-bottom: 5rem;
 		}
 		@include mobile {
 			grid-column: 1;
 			display: block;
 			flex-direction: column;
-			margin-top: 8rem;
+			margin-bottom: 5rem;
 		}
 	}
 
@@ -59,6 +58,24 @@
 		}
 		@include mobile {
 			grid-area: 1 / 1 / 3 / 3;
+		}
+	}
+
+	#mobile-headshot {
+		display: none;
+		@include tablet {
+			display: block;
+			float: right;
+			margin: 1.5rem;
+			max-width: 18rem;
+			border-radius: 10px;
+		}
+		@include mobile {
+			display: block;
+			float: right;
+			margin: 1rem;
+			max-width: 16rem;
+			border-radius: 10px;
 		}
 	}
 </style>

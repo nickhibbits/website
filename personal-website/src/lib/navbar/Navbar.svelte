@@ -1,9 +1,18 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 </script>
 
 <main class="navbar-component" id="header">
 	<div class="title">
-		<h1 id="main-header" class="header-title">Nick Hibbits</h1>
+		<h1
+			on:click={() => {
+				goto('/home');
+			}}
+			id="main-header"
+			class="header-title"
+		>
+			Nick Hibbits
+		</h1>
 		<nav>
 			<div class="nav-options-wrapper">
 				<ion-icon id="burger" size="medium" name="menu-outline" />
@@ -153,6 +162,9 @@
 		margin: 0;
 		font-size: 5rem;
 		-webkit-text-stroke: 0.7px black;
+		:hover {
+			cursor: pointer;
+		}
 	}
 
 	ul {
