@@ -1,10 +1,12 @@
 <script lang="ts">
+	let src = './static/nick-cool.png';
+	console.log('src', src);
 </script>
 
 <main class="about-wrapper">
 	<!-- <div class="bio-image-wrapper"> -->
 	<div class="image-wrapper">
-		<img class="headshot" id="main-headshot" src="../..//" alt="nick-picture" />
+		<img class="headshot" id="main-headshot" {src} alt="nick-cool" />
 	</div>
 	<div class="divider" />
 	<!-- </div> -->
@@ -87,7 +89,6 @@
 	.headshot {
 		max-width: 32rem;
 		border-radius: 10px;
-		background-image: url('../../assets/nick-cool.png');
 		@include desktop {
 			max-width: 26rem;
 		}
@@ -99,7 +100,6 @@
 
 	#mobile-headshot {
 		display: none;
-		background-image: url('../../assets/nick-cool.png');
 		@include tablet {
 			display: block;
 			float: right;

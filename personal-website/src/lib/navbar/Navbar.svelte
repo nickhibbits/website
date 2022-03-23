@@ -8,7 +8,7 @@
 			<div class="nav-options-wrapper">
 				<ion-icon id="burger" size="medium" name="menu-outline" />
 				<ul class="nav-options" id="nav-options">
-					<a href="#section1" id="about-nav-item" class="nav-link">
+					<a href="/about" id="about-nav-item" class="nav-link">
 						<li>About</li>
 					</a>
 					<a href="/projects" class="nav-link">
