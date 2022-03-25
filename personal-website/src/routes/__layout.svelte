@@ -1,8 +1,16 @@
 <script lang="ts">
-	import Navbar from '$lib/navbar/Navbar.svelte';
+	import Navbar from '$lib/components/navbar/Navbar.svelte';
+	import NavbarMobile from '$lib/components/navbar/NavbarMobile.svelte';
+	import { calculateScreenSize, screenSize } from '$lib/stores/screenSizes';
+
+	// calculateScreenSize();
+	// console.log('window', window);
 </script>
 
 <main class="root-layout">
+	<!-- {#if $screenSize.width < 700} -->
+	<!-- <NavbarMobile /> -->
+	<!-- {/if} -->
 	<Navbar />
 	<slot />
 </main>
@@ -20,5 +28,6 @@
 		margin: 0;
 		height: 100%;
 		width: 100%;
+		overflow-x: scroll;
 	}
 </style>

@@ -23,8 +23,8 @@
 </main>
 
 <style lang="scss">
-	@use '../../scss/global.scss' as global;
-	@import '../../scss/mediaQueries.scss';
+	@use '../../../scss/global.scss' as global;
+	@import '../../../scss/mediaQueries.scss';
 
 	.bio-component {
 		grid-column: 1 / span 7;

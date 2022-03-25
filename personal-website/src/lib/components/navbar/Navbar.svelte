@@ -15,7 +15,6 @@
 		</h1>
 		<nav>
 			<div class="nav-options-wrapper">
-				<ion-icon id="burger" size="medium" name="menu-outline" />
 				<ul class="nav-options" id="nav-options">
 					<a href="/about" id="about-nav-item" class="nav-link">
 						<li>About</li>
@@ -33,8 +32,8 @@
 </main>
 
 <style lang="scss">
-	@import '../../scss/global';
-	@import '../../scss/mediaQueries';
+	@import '../../../scss/global';
+	@import '../../../scss/mediaQueries';
 
 	.title {
 		display: grid;
@@ -63,11 +62,6 @@
 		color: white;
 	}
 
-	.header-mobile {
-		display: grid;
-		grid-template-rows: repeat(2, 1fr);
-	}
-
 	#main-header {
 		font-size: 2.5rem;
 		padding: 0.5rem 1rem;
@@ -89,20 +83,6 @@
 		}
 		@include mobile {
 			display: none;
-		}
-	}
-
-	#burger {
-		display: none;
-		@include tablet {
-			display: flex;
-			// padding-right: 4rem;
-			font-size: 50px;
-		}
-		@include mobile {
-			display: flex;
-			// padding-right: 4rem;
-			font-size: 50px;
 		}
 	}
 

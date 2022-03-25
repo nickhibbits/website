@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Bio from '$lib/bio/Bio.svelte';
+	import Bio from '$lib/components/bio/Bio.svelte';
 
 	let src = './static/nick-cool.png';
 	console.log('src', src);
