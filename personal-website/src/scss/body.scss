@@ -1,43 +1,9 @@
 @use './global.scss' as global;
 @import './mediaQueries.scss';
 
-// .projects-wrapper {
-// 	display: flex;
-// 	flex-direction: column;
-// 	grid-column: 1 / span 16;
-// 	grid-row: 5;
-// 	@include tablet {
-// 		grid-column: 1;
-// 	}
-// 	@include mobile {
-// 		grid-column: 1;
-// 	}
-// }
-
 .connect {
 	grid-column: 1 / span 3;
 	grid-row: 7;
-}
-
-.section-text {
-	@include global.font-secondary;
-	padding: 1rem 1rem 0 0;
-	font-size: 1.2rem;
-	color: white;
-	border-radius: 20px;
-	text-align: start;
-	@include tablet {
-		padding: 0;
-		margin: 1.2rem 0;
-	}
-	@include mobile {
-		padding: 0;
-		margin: 1.2rem 0;
-		font-size: 1rem;
-	}
-	@include desktop {
-		font-size: 1rem;
-	}
 }
 
 .logo-container {

@@ -24,7 +24,6 @@
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: 100%;
 		margin: 3rem;
-		margin-bottom: 0%;
 		@include mobile {
 			display: flex;
 		}

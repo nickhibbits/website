@@ -38,13 +38,11 @@
 			grid-column: 1;
 			display: block;
 			flex-direction: column;
-			margin-bottom: 5rem;
 		}
 		@include mobile {
 			grid-column: 1;
 			display: block;
 			flex-direction: column;
-			margin-bottom: 5rem;
 		}
 	}
 
@@ -74,8 +72,29 @@
 			display: block;
 			float: right;
 			margin: 1rem;
-			max-width: 16rem;
+			max-width: 12rem;
 			border-radius: 10px;
+		}
+	}
+
+	.section-text {
+		@include global.font-secondary;
+		padding: 1rem 1rem 0 0;
+		font-size: 1rem;
+		color: white;
+		border-radius: 20px;
+		text-align: start;
+		@include tablet {
+			padding: 0;
+			margin: 1.2rem 0;
+		}
+		@include mobile {
+			padding: 0;
+			margin: 1.2rem 0;
+			font-size: 1rem;
+		}
+		@include desktop {
+			font-size: 1rem;
 		}
 	}
 </style>
