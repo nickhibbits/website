@@ -82,12 +82,12 @@
 		@include tablet {
 			display: flex;
 			// padding-right: 4rem;
-			font-size: 50px;
+			font-size: 35px;
 		}
 		@include mobile {
 			display: flex;
 			// padding-right: 4rem;
-			font-size: 50px;
+			font-size: 35px;
 		}
 	}
 

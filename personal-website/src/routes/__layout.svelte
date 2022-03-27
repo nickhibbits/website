@@ -4,13 +4,6 @@
 	import Navbar from '$lib/components/navbar/Navbar.svelte';
 	import NavbarMobile from '$lib/components/navbar/NavbarMobile.svelte';
 
-	let tabletAndBelow: boolean = false;
-	$screenSize = {
-		height: 667,
-		width: 800,
-		label: 'tablet'
-	};
-
 	onMount(() => {
 		calculateScreenSize();
 	});
