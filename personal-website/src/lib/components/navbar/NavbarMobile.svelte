@@ -53,8 +53,6 @@
 		grid-template-columns: 18rem 1fr;
 		border-bottom: solid 0.5px white;
 		width: 100%;
-
-		@include font-primary;
 		// background: global.$primary-dark-color;
 		background: rgba(2, 0, 36, 0.85);
 		// border: solid 1px yellow;
@@ -73,7 +71,8 @@
 	}
 
 	#main-header {
-		padding-left: 3rem;
+		font-size: 2.5rem;
+		padding: 0.5rem 1rem;
 	}
 
 	#burger {
@@ -87,6 +86,16 @@
 			display: flex;
 			// padding-right: 4rem;
 			font-size: 50px;
+		}
+	}
+
+	.header-title {
+		@include font-primary;
+		margin: 0;
+		font-size: 5rem;
+		-webkit-text-stroke: 0.7px black;
+		:hover {
+			cursor: pointer;
 		}
 	}
 

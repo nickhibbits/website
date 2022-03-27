@@ -9,7 +9,7 @@ type ScreenSize = {
 export const screenSize = writable<ScreenSize>(null);
 
 export function calculateScreenSize() {
-	// console.log("begin calculateScreenSize");
+	console.log('begin calculateScreenSize');
 	console.log('window', window);
 
 	const height = window.innerHeight || 667;

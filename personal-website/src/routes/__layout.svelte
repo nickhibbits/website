@@ -1,21 +1,34 @@
 <script lang="ts">
+	import { calculateScreenSize, screenSize } from '$lib/stores/screenSizes';
+	import { onMount } from 'svelte';
 	import Navbar from '$lib/components/navbar/Navbar.svelte';
 	import NavbarMobile from '$lib/components/navbar/NavbarMobile.svelte';
-	import { calculateScreenSize, screenSize } from '$lib/stores/screenSizes';
 
-	// calculateScreenSize();
-	// console.log('window', window);
+	let tabletAndBelow: boolean = false;
+	$screenSize = {
+		height: 667,
+		width: 800,
+		label: 'tablet'
+	};
+
+	onMount(() => {
+		calculateScreenSize();
+	});
 </script>
 
 <main class="root-layout">
-	<!-- {#if $screenSize.width < 700} -->
-	<!-- <NavbarMobile /> -->
-	<!-- {/if} -->
-	<Navbar />
+	<div class="navbar-desktop">
+		<Navbar />
+	</div>
+	<div class="navbar-mobile">
+		<NavbarMobile />
+	</div>
 	<slot />
 </main>
 
 <style lang="scss">
+	@import '../scss/mediaQueries';
+
 	.root-layout {
 		background: rgb(2, 0, 36);
 		background: linear-gradient(
@@ -29,5 +42,23 @@
 		height: 100%;
 		width: 100%;
 		overflow-x: scroll;
+	}
+
+	.navbar-desktop {
+		@include mobile {
+			display: none;
+		}
+		@include tablet {
+			display: none;
+		}
+	}
+
+	.navbar-mobile {
+		@include desktop {
+			display: none;
+		}
+		@include bigScreen {
+			display: none;
+		}
 	}
 </style>

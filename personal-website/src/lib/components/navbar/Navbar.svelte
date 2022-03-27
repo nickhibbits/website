@@ -45,19 +45,6 @@
 		// border: solid 1px yellow;
 	}
 
-	.sticky {
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-	.sticky + .main-wrapper {
-		padding-top: 60px;
-		@include mobile {
-			padding-top: 0;
-		}
-	}
-
 	.navbar-component {
 		color: white;
 	}
