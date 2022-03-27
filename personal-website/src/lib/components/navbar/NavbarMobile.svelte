@@ -18,9 +18,11 @@
 		<div class="menu-wrapper">
 			<ion-icon on:click={() => (open = !open)} id="burger" size="medium" name="menu-outline" />
 		</div>
-		{#if open}
-			<div id="nav-options-mobile-container" class="nav-options-mobile-container">
-				<div class="grid-filler" />
+	</div>
+	{#if open}
+		<div class="nav-flex">
+			<div class="box-1" />
+			<div id="nav-options-mobile-container" class="nav-options-mobile-container box-2">
 				<div id="nav-options-mobile-wrapper" class="nav-options-mobile-wrapper">
 					<ul class="nav-options-mobile" id="nav-options-mobile">
 						<a href="/about" id="about-nav-item-mobile" class="nav-link-mobile">
@@ -35,8 +37,8 @@
 					</ul>
 				</div>
 			</div>
-		{/if}
-	</div>
+		</div>
+	{/if}
 </main>
 
 <style lang="scss">
@@ -102,36 +104,43 @@
 	.nav-options-mobile-container {
 		display: none;
 		@include tablet {
-			display: grid;
-			grid-template-columns: 60% 40%;
+			display: block;
 		}
 		@include mobile {
-			display: grid;
-			grid-template-columns: 60% 40%;
+			display: block;
 		}
 	}
 
 	.nav-options-mobile-wrapper {
 		@include tablet {
-			border: solid 1px white;
+			// border: solid 0.5px white;
 			background: global.$primary-dark-color;
 			grid-column: 2;
 			display: flex;
 			justify-content: center;
 			padding: 1rem 3rem;
+			position: absolute;
 		}
 		@include mobile {
-			border: solid 1px white;
+			// border: solid 0.5px white;
 			background: global.$primary-dark-color;
 			grid-column: 2;
 			display: flex;
 			justify-content: center;
 			padding: 1rem 3rem;
+			position: absolute;
 		}
+	}
+
+	.nav-flex {
+		display: grid;
+		grid-template-columns: 60% 40%;
 	}
 
 	.nav-options-mobile {
 		padding-left: 5rem;
+		@include font-secondary;
+		list-style: none;
 	}
 	.nav-link-mobile {
 		display: flex;
