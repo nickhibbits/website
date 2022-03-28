@@ -8,7 +8,7 @@
 	<div class="title">
 		<h1
 			on:click={() => {
-				goto('/home');
+				goto('/');
 			}}
 			id="main-header"
 			class="header-title"
@@ -42,8 +42,7 @@
 </main>
 
 <style lang="scss">
-	@use '../../../scss/global.scss' as global;
-	@import '../../../scss/global';
+	@import '../../../scss/global.scss';
 	@import '../../../scss/mediaQueries.scss';
 
 	.navbar-mobile-component {
@@ -114,7 +113,7 @@
 	.nav-options-mobile-wrapper {
 		@include tablet {
 			// border: solid 0.5px white;
-			background: global.$primary-dark-color;
+			background: $primary-dark-color;
 			grid-column: 2;
 			display: flex;
 			justify-content: center;
@@ -123,7 +122,7 @@
 		}
 		@include mobile {
 			// border: solid 0.5px white;
-			background: global.$primary-dark-color;
+			background: $primary-dark-color;
 			grid-column: 2;
 			display: flex;
 			justify-content: center;

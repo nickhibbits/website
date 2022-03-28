@@ -1,12 +1,13 @@
 <script lang="ts">
 	import Connect from '$lib/components/connect/Connect.svelte';
+	import ConnectLinks from '$lib/components/connect/ConnectLinks.svelte';
 	import Logo from '$lib/components/logo/Logo.svelte';
 </script>
 
 <main class="root-index">
 	<Logo />
 	<div class="connect-wrapper">
-		<Connect />
+		<ConnectLinks />
 	</div>
 </main>
 
@@ -24,6 +25,7 @@
 	}
 
 	.connect-wrapper {
-		border: solid 2px green;
+		padding: 10px;
+		// position: absolute;
 	}
 </style>

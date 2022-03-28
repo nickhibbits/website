@@ -6,7 +6,7 @@
 	<div class="title">
 		<h1
 			on:click={() => {
-				goto('/home');
+				goto('/');
 			}}
 			id="main-header"
 			class="header-title"

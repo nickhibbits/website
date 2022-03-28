@@ -480,6 +480,9 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		align-items: center;
 		height: 12rem;
 		justify-content: center;
+		@include mobile {
+			height: 5rem;
+		}
 	}
 
 	.travel-app-text {
