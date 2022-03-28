@@ -52,6 +52,9 @@
 	#main-header {
 		font-size: 2.5rem;
 		padding: 0.5rem 1rem;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	nav {

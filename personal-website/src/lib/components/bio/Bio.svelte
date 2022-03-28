@@ -7,14 +7,14 @@
 	<img id="mobile-headshot" {src} alt="headshot" />
 	<p class="section-text">
 		Hi, I'm Nick. Welcome to my website.<br /><br /> This space serves as my personal playground to
-		practice and experiment with new concepts I encounter in my time spent as a Web-Developer. This
-		page is built from the ground up, with no help from a website builder, using HTML, CSS and
-		Javascript.<br /><br />I also use the site to showcase other programming projects I've worked
-		on. These include professional projects, where I was part of a larger team, and personal
-		projects I started and finished myself.<br /><br />Lastly this site is also linked to to my
-		music-production endeavors, under the moniker NHIBIT. Currently this is limited to my Soundcloud
-		profile, but a dedicated NHIBIT website is in the works alongside more original tracks and
-		mixes.<br /><br />
+		practice and experiment with new concepts I encounter in my time spent as a Front End Web
+		Developer. This page is built from the ground up, with no help from a website builder, using
+		HTML, SCSS and Javascript (scaffolded with Sveltekit).<br /><br />I also use the site to
+		showcase other programming projects I've worked on. These include professional projects, where I
+		was part of a larger team, and personal projects I started and finished myself.<br /><br
+		/>Lastly this site is also linked to to my music-production endeavors, under the moniker NHIBIT.
+		Currently this is limited to my Soundcloud profile, but a dedicated NHIBIT website is in the
+		works alongside more original tracks and mixes.<br /><br />
 		In sync with any new programming projects or music releases, I'll be adding updates to the
 		<em>Recent</em>
 		section of the site.<br /><br />
