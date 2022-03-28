@@ -88,6 +88,11 @@
 	@use '../../../scss/global.scss' as global;
 	@import '../../../scss/mediaQueries.scss';
 
+	.logo-container {
+		display: flex;
+		justify-content: center;
+	}
+
 	.logo-wrapper {
 		display: flex;
 		align-items: center;

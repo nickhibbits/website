@@ -1,9 +1,13 @@
 <script lang="ts">
+	import Connect from '$lib/components/connect/Connect.svelte';
 	import Logo from '$lib/components/logo/Logo.svelte';
 </script>
 
 <main class="root-index">
 	<Logo />
+	<div class="connect-wrapper">
+		<Connect />
+	</div>
 </main>
 
 <style lang="scss">
@@ -17,5 +21,9 @@
 		);
 		scroll-behavior: smooth;
 		margin: 0;
+	}
+
+	.connect-wrapper {
+		border: solid 2px green;
 	}
 </style>

@@ -1,6 +1,6 @@
 <script lang="ts">
 </script>
 
-<main />
+<main class="connect-component" />
 
 <style lang="scss"></style>
