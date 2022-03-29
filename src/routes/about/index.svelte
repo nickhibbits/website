@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Bio from '$lib/components/bio/Bio.svelte';
-	import nickImage from '$lib/static/images/nick-cool.png';
+	import src from '$lib/static/images/nick-cool.png';
 </script>
 
 <main class="about-index">
@@ -9,7 +9,7 @@
 	</div>
 	<div class="divider" />
 	<div class="image-wrapper">
-		<img class="headshot" id="main-headshot" src={nickImage} alt="nick-pic" />
+		<img class="headshot" id="main-headshot" {src} alt="nick-pic" />
 	</div>
 </main>
 

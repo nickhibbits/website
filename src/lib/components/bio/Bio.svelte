@@ -1,5 +1,5 @@
 <script lang="ts">
-	let src = './static/nick-cool.png';
+	import src from '$lib/static/images/nick-cool.png';
 </script>
 
 <main class="bio-component">
