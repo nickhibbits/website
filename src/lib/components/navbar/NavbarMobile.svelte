@@ -1,7 +1,20 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	let open = false;
+
+	onMount(() => {
+		// function closeNavMenu() {
+		// 	if (open == true) {
+		// 		open = false;
+		// 	} else {
+		// 		return;
+		// 	}
+		// }
+		// window.addEventListener('click', () => closeNavMenu());
+	});
 </script>
 
 <main class="navbar-mobile-component">
@@ -20,18 +33,23 @@
 		</div>
 	</div>
 	{#if open}
-		<div class="nav-flex">
+		<div transition:fade class="nav-flex">
 			<div class="box-1" />
 			<div id="nav-options-mobile-container" class="nav-options-mobile-container box-2">
 				<div id="nav-options-mobile-wrapper" class="nav-options-mobile-wrapper">
 					<ul class="nav-options-mobile" id="nav-options-mobile">
-						<a href="/about" id="about-nav-item-mobile" class="nav-link-mobile">
+						<a
+							href="/about"
+							on:click={() => (open = false)}
+							id="about-nav-item-mobile"
+							class="nav-link-mobile"
+						>
 							<li>About</li>
 						</a>
-						<a href="/projects" class="nav-link-mobile">
+						<a href="/projects" on:click={() => (open = false)} class="nav-link-mobile">
 							<li>Projects</li>
 						</a>
-						<a href="/connect" class="nav-link-mobile">
+						<a href="/connect" on:click={() => (open = false)} class="nav-link-mobile">
 							<li>Connect</li>
 						</a>
 					</ul>
@@ -39,6 +57,7 @@
 			</div>
 		</div>
 	{/if}
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </main>
 
 <style lang="scss">
@@ -105,6 +124,7 @@
 
 	.nav-options-mobile-container {
 		display: none;
+		// transition: ;
 		@include tablet {
 			display: block;
 		}
@@ -122,6 +142,8 @@
 			justify-content: center;
 			padding: 1rem 3rem;
 			position: absolute;
+			top: 61px;
+			right: 0;
 		}
 		@include mobile {
 			// border: solid 0.5px white;
@@ -131,6 +153,9 @@
 			justify-content: center;
 			padding: 1rem 3rem;
 			position: absolute;
+			top: 61px;
+			right: 0;
+			width: 8rem;
 		}
 	}
 

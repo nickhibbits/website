@@ -16,6 +16,7 @@
 			<ion-icon style="font-size: 80px;" id="email" size="large" name="mail-outline" />
 		</a>
 	</div>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </main>
 
 <style lang="scss">

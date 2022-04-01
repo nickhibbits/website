@@ -16,13 +16,14 @@
 	<div class="navbar-mobile">
 		<NavbarMobile />
 	</div>
-	<slot />
+	<slot class="content" />
 </main>
 
 <style lang="scss">
 	@import '../scss/mediaQueries';
 
 	.root-layout {
+		display: block;
 		background: rgb(2, 0, 36);
 		background: linear-gradient(
 			180deg,
@@ -38,6 +39,8 @@
 	}
 
 	.navbar-desktop {
+		position: sticky;
+		top: 0;
 		@include mobile {
 			display: none;
 		}
@@ -47,11 +50,17 @@
 	}
 
 	.navbar-mobile {
+		position: sticky;
+		top: 0;
 		@include desktop {
 			display: none;
 		}
 		@include bigScreen {
 			display: none;
 		}
+	}
+
+	.content {
+		z-index: 1;
 	}
 </style>

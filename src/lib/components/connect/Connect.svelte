@@ -5,14 +5,12 @@
 <main class="connect-component">
 	<div class="title-wrapper">
 		<h2 class="header-title" id="connect-header-title">Connect</h2>
-		<p class="subline">
-			Always looking to connect! Shoot me a message below or click the icons for my socials.
-		</p>
+		<p class="subline">Always looking to connect! For now socials work best.</p>
 	</div>
-	<form>
+	<!-- <form>
 		<label class="message-area-title" for="message-area">Write a Message...</label>
 		<textarea id="message-area">What's on your mind?</textarea>
-	</form>
+	</form> -->
 	<ConnectLinks />
 </main>
 
@@ -25,7 +23,7 @@
 	}
 
 	.title-wrapper {
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 	}
 
 	.subline {

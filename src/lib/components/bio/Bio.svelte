@@ -15,9 +15,9 @@
 		/>Lastly this site is also linked to to my music-production endeavors, under the moniker NHIBIT.
 		Currently this is limited to my Soundcloud profile, but a dedicated NHIBIT website is in the
 		works alongside more original tracks and mixes.<br /><br />
-		In sync with any new programming projects or music releases, I'll be adding updates to the
+		<!-- In sync with any new programming projects or music releases, I'll be adding updates to the
 		<em>Recent</em>
-		section of the site.<br /><br />
+		section of the site.<br /><br /> -->
 		Thanks for visiting!
 	</p>
 </main>
@@ -72,7 +72,7 @@
 			display: block;
 			float: right;
 			margin: 1rem;
-			max-width: 12rem;
+			max-width: 10rem;
 			border-radius: 10px;
 		}
 	}
