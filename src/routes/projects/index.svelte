@@ -463,8 +463,8 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		height: 100px;
 		width: 100px;
 		@include mobile {
-			height: 80px;
-			width: 80px;
+			height: 75px;
+			width: 75px;
 		}
 	}
 
@@ -493,7 +493,7 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		margin: 2rem 0;
 		@include mobile {
 			font-size: 1.5rem;
-			margin: 0.4rem 0;
+			margin: 0;
 		}
 	}
 
