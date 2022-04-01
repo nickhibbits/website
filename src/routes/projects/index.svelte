@@ -481,7 +481,7 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		height: 12rem;
 		justify-content: center;
 		@include mobile {
-			height: 4rem;
+			height: 3rem;
 		}
 	}
 
