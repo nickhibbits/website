@@ -463,8 +463,8 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		height: 100px;
 		width: 100px;
 		@include mobile {
-			height: 75px;
-			width: 75px;
+			height: 70px;
+			width: 70px;
 		}
 	}
 
@@ -481,7 +481,7 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		height: 12rem;
 		justify-content: center;
 		@include mobile {
-			height: 5rem;
+			height: 4rem;
 		}
 	}
 

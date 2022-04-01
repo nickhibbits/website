@@ -87,7 +87,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		padding-right: 3rem;
+		padding-right: 1.5rem;
 	}
 
 	#main-header {
