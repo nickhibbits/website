@@ -16,7 +16,7 @@
 	<div class="navbar-mobile">
 		<NavbarMobile />
 	</div>
-	<slot class="content" />
+	<slot />
 </main>
 
 <style lang="scss">
@@ -58,9 +58,5 @@
 		@include bigScreen {
 			display: none;
 		}
-	}
-
-	.content {
-		z-index: 1;
 	}
 </style>

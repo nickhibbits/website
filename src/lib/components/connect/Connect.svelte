@@ -5,7 +5,8 @@
 <main class="connect-component">
 	<div class="title-wrapper">
 		<h2 class="header-title" id="connect-header-title">Connect</h2>
-		<p class="subline">Always looking to connect! For now socials work best.</p>
+		<p class="subline">Always looking to connect!</p>
+		<p class="subline sub-subline">For now socials work best.</p>
 	</div>
 	<!-- <form>
 		<label class="message-area-title" for="message-area">Write a Message...</label>
@@ -20,6 +21,9 @@
 
 	.connect-component {
 		margin: 3rem;
+		@include mobile {
+			margin: 3rem 1.5rem;
+		}
 	}
 
 	.title-wrapper {
@@ -28,6 +32,13 @@
 
 	.subline {
 		@include font-secondary;
+		font-size: 1.3rem;
+		margin-bottom: 3rem;
+	}
+
+	.sub-subline {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
 	}
 
 	form {

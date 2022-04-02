@@ -25,7 +25,8 @@
 	// }
 
 	.connect-wrapper {
-		padding: 10px;
-		// position: absolute;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
 	}
 </style>

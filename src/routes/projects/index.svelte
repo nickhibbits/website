@@ -380,6 +380,9 @@ C271.31,7.23,273.04,6.7,275.3,6.7z"
 		font-size: 4rem;
 		border-bottom: solid 1px lightgrey;
 		margin: 3rem 3rem 0.5rem 3rem;
+		@include mobile {
+			margin: 3rem 1.5rem 0.5rem 1.5rem;
+		}
 	}
 
 	.project-card {
